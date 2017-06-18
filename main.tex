@@ -1,0 +1,19 @@
+\documentclass[12pt, oneside, listof=totoc]{scrartcl}
+
+\include{packages}
+\include{style}
+\bibliography{references}
+
+\begin{document}
+\include{front}
+\pagenumbering{Roman}
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+\include{content}
+
+\clearpage
+\pagenumbering{roman}
+\include{literature}
+\end{document}

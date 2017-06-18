@@ -1,0 +1,59 @@
+\geometry{a4paper, top=30mm, right=30mm,left=21mm, bottom=20mm}
+%Zeilenabstand eineinhalbzeilig
+\onehalfspacing
+% Schriftart im gesamten Dokument
+% ptm	Times
+% phv	Helvetica
+% ppl	Palatino
+% pch	Charter
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\familydefault}{\sfdefault}
+% Kopf- und Fußzeilen
+% alle Seiten
+\pagestyle{fancy}
+\rhead{\thepage}
+\chead{}
+\lhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+% erste Seite je Kapitel, TOC, etc.
+\fancypagestyle{plain}{
+\rhead{\thepage}
+\chead{}
+\lhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+}
+% Absatzeinrückung
+\setlength{\parindent}{0.5cm}
+
+\setkomafont{section}{\large\sffamily\bfseries}
+\setkomafont{subsection}{\normalsize\sffamily\bfseries}
+
+\captionsetup[figure]{position=below,format=plain,justification=centering,font={footnotesize}}
+% Caption-Einstellungen für Tabellen
+\captionsetup[table]{position=above, aboveskip=0pt,format=plain,justification=centering,font={footnotesize}}
+\captionsetup[lstlisting]{position=below,format=plain,justification=centering,font={footnotesize}}
+% Abbildung
+\counterwithout{figure}{section}
+% Tabelle
+\counterwithout{table}{section}
+
+% Fußnoten durchgehend nummerieren
+\counterwithout{footnote}{section}
+
+\setlength{\fboxsep}{0pt}
+
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+% Fußnoten
+\renewcommand*{\multfootsep}{,}
+\setlength{\footnotemargin}{0pt}
+
+% itemize separation
+\setlist[enumerate]{noitemsep}
+\setlist[itemize]{noitemsep}
