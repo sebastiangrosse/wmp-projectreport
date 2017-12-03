@@ -1,2 +1,1 @@
-LaTeX-Projekt für den Projektbericht in WMP.
-
+LaTeX-Projekt für den Projektbericht in WMP. ABC
